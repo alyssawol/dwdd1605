@@ -109,16 +109,16 @@ main a:hover {
 
 figure.wrapped {
     width: 30%;
-    margin: 0 0 0 2;
+    margin: 0 0 0 2%;
     float: right;
 }
 figure.wrapped img {
-    width: 100;
+    width: 100%;
     height: auto;
 }
 
 figure.wrapped figcaption {
-    text-align: left;
+    text-align: center;
     font-size: .9rem;
 }
 
