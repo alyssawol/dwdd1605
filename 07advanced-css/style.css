@@ -1,0 +1,280 @@
+/* prevent problems with different browsers*/ 
+* {box-sizing: border-box;}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300; 
+    margin: 0;
+}   
+
+/* Header Here */
+header {
+    background-color: #4F5F73;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 2vw;
+}
+header h1 {
+    margin: 0;
+    color: #F2F2F2;
+}
+header p {
+    margin: 0;
+    color: #F2F2F2;
+    letter-spacing: 0.6px;
+}
+
+/* SMALL SCREENS */
+@media only screen and (max-width: 600px) {
+    Nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    
+    nav a {
+        display: block;
+        padding: .8rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #4F5F73;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+    }
+    
+    nav .active a {
+        background-color: #4F5F73;
+        background-image: linear-gradient(to bottom, #4F5F73, #252e38);
+        color: white;
+    }
+    
+} /*end of the media query*/
+
+
+
+
+
+
+/*BIG SCREENS*/
+@media only screen and (min-width: 601px) {
+  nav {
+    background-color: #CCC4C0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #F2F2F2;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a {
+    background-color: #4F5F73;
+        color: #F2F2F2;
+}
+nav a:hover {
+    color:#8C4B45;
+} 
+} /*end of the media query*/
+
+
+
+
+
+
+
+/* main stuff goes here*/
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color:#8C4B45;
+}
+
+main h2 {
+    color: #4F5F73;
+    margin-bottom: .2rem;
+}
+
+main h3 {
+    color: #4F5F73;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #55555A;
+    margin: .2rem;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #CCC4C0;
+}
+
+main dl dt {
+    color: #8C4B45;
+    font-weight: 700;
+}
+main dl dd {
+    color: #55555A;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: square;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #CCC4C0;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #8C4B45;
+    border-radius: 5px;
+}
+
+main a {
+    color: #8C4B45;
+}
+main a:hover {
+    color: #4F5F73;
+}
+
+.furniturehero {
+    width: 100%;
+    margin: 0;
+}
+
+.furniturehero img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .9rem;
+}
+
+div.pictures {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+div.pictures figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.pictures figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #8C4B45;
+}
+
+div.pictures img 
+{
+    width: 98%;
+    height: auto;
+}
+
+div.pictures img:hover {
+    box-shadow: 0px 0px 10px black;
+}
+
+
+.myForm fieldset {
+    border: 1px solid #8C4B45;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #8C4B45;
+    font-size: .8rem;
+}
+
+.myForm label {
+     margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea
+{
+    border: solid 1px #4F5F73;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.myForm textarea {
+    
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: #ECECEC;
+}
+
+.myForm [type=submit] {
+    background-color: #CCC4C0;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+    
+
+
+/* Footer stuff here*/
+footer {
+    background-color: #CACACA;
+    text-align: center;
+    color: #4F5F73;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: #4F5F73;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
